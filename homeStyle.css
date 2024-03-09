@@ -95,7 +95,7 @@
 .slider-img{
     width: 50%;
     height: 100%;
-    background-image: url(./images/food.jpg);
+    background-image: url(./assets/images/food.jpg);
     background-position: center;
     background-size: cover;
 }

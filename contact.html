@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>page 10</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="container_1">
+   <nav class="navbar">
+    <div class="back-button">              
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+               
+                <path d="M20 11H7.414l3.293-3.293a1 1 0 0 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a1 1 0 0 0 1.414-1.414L7.414 13H20a1 1 0 0 0 0-2z"  fill="#fff"/>
+            </svg>        
+    </div>
+    <div class="logo">
+        <img src="./assets/images/logo.png" alt="" height="58px">
+    </div>
+    
+    <div class="help-button">
+      <svg class="icon">
+        <path d="M12 2C6.487 2 2 6.487 2 12s4.487 10 10 10 10-4.487 10-10S17.513 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm0-12.5c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm.25 8h-1v-1c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25c0 .69.56 1.25 1.25 1.25h1c.69 0 1.25-.56 1.25-1.25v-1c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1h-.5c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25h1c.69 0 1.25.56 1.25 1.25v1c0 .69-.56 1.25-1.25 1.25z" fill="#fff"/>
+    </svg>
+      </svg>
+      <span class="label">Help</span>
+    </div>
+  </nav>
+  <div class="progress-bar">
+    <div class="progress-bar-inner">
+      <div class="progress-bar-fill" style="width: 100%;"></div>
+    </div>
+    <div class="progress-bar-text">
+      <span class="progress-percent">94</span>
+      <span class="progress-percent-unit">%</span>
+    </div>
+  </div>
+ </div>
+      <div class="text-measurment">
+        <div class="first-text"><h1>Measurments</h1><span class="second-text">
+        <h3>please fill your Measurments</h3></span>
+      </div>
+      </div>
+      <div class="container">
+        <div class="tab">
+          <button id="imperial-btn" class="active">IMPERIAL</button>
+          <button id="metric-btn" class="active_1">METRIC</button>
+        </div>
+        <form id="imperial-form">
+          <div class="form-group imperial">
+            <label for="imperial_age">Age</label>
+            <input type="number" id="imperial_age" name="imperial_age" min="14" max="99" required>
+          </div>
+          <div class="form-group imperial">
+            <label for="height_ft">Height (ft)</label>
+            <input type="number" id="height_ft" name="height_ft" min="4" max="8" required>
+          </div>
+          <div class="form-group imperial">
+            <label for="weight_lb">Weight (lb)</label>
+            <input type="number" id="weight_lb" name="weight_lb" min="90" max="400" required>
+          </div>
+          <div class="form-group imperial">
+            <label for="weight_target_lb">Target weight (lb)</label>
+            <input type="number" id="weight_target_lb" name="weight_target_lb" min="90" max="400" required>
+          </div>
+        </form>
+        <form id="metric-form" style="display: none;">
+          <div class="form-group metric">
+            <label for="metric_age">Age</label>
+            <input type="number" id="metric_age" name="metric_age" min="14" max="99" required>
+          </div>
+          <div class="form-group metric">
+            <label for="height_cm">Height (cm)</label>
+            <input type="number" id="height_cm" name="height_cm" min="135" max="255" required>
+          </div>
+          <div class="form-group metric">
+            <label for="weight_kg">Weight (kg)</label>
+            <input type="number" id="weight_kg" name="weight_kg" min="40" max="180" required>
+          </div>
+          <div class="form-group metric">
+            <label for="weight_target_kg">Target weight (kg)</label>
+            <input type="number" id="weight_target_kg" name="weight_target_kg" min="40" max="180" required>
+          </div>
+        </form>
+      </div>
+      <script>
+        document.getElementById('metric-btn').addEventListener('click', function() {
+          document.getElementById('imperial-form').style.display = 'none';
+          document.getElementById('metric-form').style.display = 'block';
+        });
+      
+        document.getElementById('imperial-btn').addEventListener('click', function() {
+          document.getElementById('metric-form').style.display = 'none';
+          document.getElementById('imperial-form').style.display = 'block';
+        });
+      </script>
+      <div class="submit-btn">
+        <button type="submit">Continue</button>
+      </div>
+</body>
+</html>
