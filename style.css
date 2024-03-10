@@ -509,13 +509,10 @@ label {
   align-items: center;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 .card{
   width: 76%;
-=======
 .card {
   width: 72%;
->>>>>>> cdfc2168009854155dadbd7bbb3fb2eaf5fced9b
   height: 18%;
   background-color: #151226;
   border-radius: 11px;
@@ -524,7 +521,6 @@ label {
   justify-content: space-between;
   padding: 0px 30px 0px 30px;
 }
-<<<<<<< HEAD
 #numbers{
   background: linear-gradient(to right, #f0367f, #c44edb);
   -webkit-background-clip: text;
@@ -726,9 +722,7 @@ label {
   background-clip: text;
   color: transparent;
 }
-=======
 #numbers {
   color: linear-gradient(to right, #f1357d, #c44fde);
   font-size: 22px;
 }
->>>>>>> cdfc2168009854155dadbd7bbb3fb2eaf5fced9b
