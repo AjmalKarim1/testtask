@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  background-color: #252239;
+}
+html {
+  font-size: 10px;
+}
+/* nav bar style starts from here on  */
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+.navbar {
+  background-color: #151226;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-button,
+.help-button {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  padding: 24px;
+  font-size: 20px;
+}
+.label {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.help-button {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 90px;
+}
+/* nav bar ends here ///////// */
+
+.progress-bar {
+  background: #00a5ff;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.progress-bar-text {
+  width: 6%;
+  height: 30px;
+  border-radius: 0px 0px 99px 99px;
+  background: #00a5ff;
+  text-align: center;
+}
+.progress-percent {
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.progress-percent-unit {
+  font-size: 12px;
+  position: absolute;
+  bottom: 240px;
+}
+
+/* progress bar ends here  */
+.meat-selection {
+  padding: 40px 0;
+}
+.main__heading h1 {
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2.4rem;
+}
+.choice__heading {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #a8a7b0;
+  text-align: center;
+}
+.services {
+  padding: 30px 20px;
+}
+.service__item {
+  width: 100%;
+  max-width: 34%;
+  margin-top: 14px;
+  border-radius: 0.8rem;
+  background-color: #151226;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  height: auto;
+  min-height: 68px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transition: border 0.8s;
+}
+.item__content {
+  padding: 0.75rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+.service__item img {
+  height: 44px;
+  width: 44px;
+  margin-right: 20px;
+  max-width: 100%;
+}
+.service__item span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.service__item:hover {
+  border: 1px solid rgb(137, 144, 252);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.services__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* new ////////////////// */
+.custom-button {
+  background: linear-gradient(to bottom right, #0051ff, #00c2ff);
+  border-radius: 2.8rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  min-height: 50px;
+  width: 100%;
+  max-width: 34%;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 25px;
+}
+
+.custom-button:hover {
+  background: #e6b04b;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.button-text {
+  display: inline-block;
+  max-width: 95%;
+}
+
+/* responsive */
+/* Define styles for small screens */
+@media (max-width: 768px) {
+  .navbar__container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .back-button,
+  .help-button {
+    padding: 12px; /* Adjust padding for smaller buttons */
+    font-size: 16px; /* Adjust font size for smaller buttons */
+  }
+
+  .label {
+    font-size: 10px; /* Adjust font size for smaller labels */
+  }
+
+  .progress-bar-text {
+    width: 10%; /* Adjust width for smaller progress bar text */
+    height: 20px; /* Adjust height for smaller progress bar text */
+    padding: 5px; /* Adjust padding for smaller progress bar text */
+  }
+}
+
+/* Add a media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .service__item {
+    max-width: 100%; /* Change maximum width to fit smaller screens */
+  }
+
+  .services__container {
+    flex-direction: row; /* Change flex direction to horizontal for smaller screens */
+  }
+}
+
+/* Add a media query for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+  .main__heading h1 {
+    font-size: 2rem;
+  }
+
+  .choice__heading {
+    font-size: 1.4rem;
+  }
+
+  .service__item {
+    width: 100%;
+    max-width: none;
+  }
+
+  .custom-button {
+    max-width: none;
+  }
+}
