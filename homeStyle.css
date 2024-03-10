@@ -84,6 +84,12 @@
     border: none;
     font-size: 22px;
   }
+  .btn-male a {
+    text-decoration: none;
+  }
+  .btn-female a{
+    text-decoration: none;
+  }
   .btn-female {
     width: 31%;
     height: 43%;
@@ -159,6 +165,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #252239;
   
   }
   #linear-color{
@@ -203,6 +210,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #252239;
   }
   .sec-four-inner{
     width: 69%;
@@ -296,6 +304,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #252239;
   }
   .sec-five-inner{
     width: 65%;
@@ -316,7 +325,7 @@
     justify-content: space-between;
   }
   .sec-five-cart{
-    width: 48%;
+    width: 45%;
     height: 100%;
     border-radius: 8px;
     display: flex;
@@ -346,6 +355,54 @@
   }
   #numbers {
     color: linear-gradient(to right, #f1357d, #c44fde);
-    font-size: 22px;
+    font-size: 36px;
   }
-  
+  .footer{
+    width: 100%;
+    height: 65vh;
+    background-color: #151226;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-inner{
+    width: 30%;
+    height: 70%;
+    width: 54%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-top{
+    width: 100%;
+    height: 79%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .f-t-left{
+    width: 30%;
+    height: 100%;
+  }
+  .f-t-right{
+    width: 18%;
+    height: 100%;
+    list-style: none;
+    font-size: 23px;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    color: gray;
+  }
