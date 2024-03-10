@@ -70,7 +70,7 @@ html {
 .progress__percent-unit {
   font-size: 12px;
   position: absolute;
-  bottom: 240px;
+  color: white;
 }
 
 /* progress bar ends here  */
@@ -165,21 +165,21 @@ html {
 /* responsive */
 /* Define styles for small screens */
 @media (max-width: 768px) {
-  .navbar__container {
+  .nav__container {
     width: 90%; /* Adjust width for smaller screens */
   }
 
-  .back-button,
-  .help-button {
+  .exit-button,
+  .help-btn {
     padding: 12px; /* Adjust padding for smaller buttons */
     font-size: 16px; /* Adjust font size for smaller buttons */
   }
 
-  .label {
+  .help__text {
     font-size: 10px; /* Adjust font size for smaller labels */
   }
 
-  .progress-bar-text {
+  .progress__bar-text {
     width: 10%; /* Adjust width for smaller progress bar text */
     height: 20px; /* Adjust height for smaller progress bar text */
     padding: 5px; /* Adjust padding for smaller progress bar text */
