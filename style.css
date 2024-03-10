@@ -180,20 +180,22 @@ html {
   }
 
   .progress__bar-text {
-    width: 10%; /* Adjust width for smaller progress bar text */
-    height: 20px; /* Adjust height for smaller progress bar text */
-    padding: 5px; /* Adjust padding for smaller progress bar text */
-  }
+    width: 10%; 
+    height: 20px; 
+    padding: 5px; 
 }
 
 /* Add a media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
   .service__item {
-    max-width: 100%; /* Change maximum width to fit smaller screens */
+    max-width: 100%;
   }
 
   .services__container {
-    flex-direction: row; /* Change flex direction to horizontal for smaller screens */
+    flex-direction: row; 
+  }
+  .custom-button {
+    max-width: none;
   }
 }
 
