@@ -18,59 +18,59 @@ html {
   align-items: center;
   width: 65%;
 }
-.navbar {
+.nav {
   background-color: #151226;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.back-button,
-.help-button {
+.exit-button,
+.help-btn {
   display: inline-block;
   cursor: pointer;
   color: white;
   padding: 24px;
   font-size: 20px;
 }
-.label {
+.help__text {
   margin-left: 8px;
   font-size: 12px;
   font-weight: 700;
 }
 
-.help-button {
+.help-btn {
   display: flex;
   align-items: center;
 }
-.logo img {
+.web__logo img {
   height: 90px;
 }
 /* nav bar ends here ///////// */
 
-.progress-bar {
+.progress__bar {
   background: #00a5ff;
   height: 2px;
   display: flex;
   justify-content: center;
   color: #ffffff;
 }
-.progress-bar-text {
+.progress__bar-text {
   width: 6%;
   height: 30px;
   border-radius: 0px 0px 99px 99px;
   background: #00a5ff;
   text-align: center;
 }
-.progress-percent {
+.progress__percent {
   font-size: 18px;
   font-weight: 700;
   position: relative;
 }
-.progress-percent-unit {
+.progress__percent-unit {
   font-size: 12px;
   position: absolute;
-  bottom: 240px;
+  color: white;
 }
 
 /* progress bar ends here  */
@@ -165,38 +165,40 @@ html {
 /* responsive */
 /* Define styles for small screens */
 @media (max-width: 768px) {
-  .navbar__container {
+  .nav__container {
     width: 90%; /* Adjust width for smaller screens */
   }
 
-  .back-button,
-  .help-button {
+  .exit-button,
+  .help-btn {
     padding: 12px; /* Adjust padding for smaller buttons */
     font-size: 16px; /* Adjust font size for smaller buttons */
   }
 
-  .label {
+  .help__text {
     font-size: 10px; /* Adjust font size for smaller labels */
   }
 
-  .progress-bar-text {
-    width: 10%; /* Adjust width for smaller progress bar text */
-    height: 20px; /* Adjust height for smaller progress bar text */
-    padding: 5px; /* Adjust padding for smaller progress bar text */
-  }
+  .progress__bar-text {
+    width: 10%; 
+    height: 20px; 
+    padding: 5px; 
 }
 
 /* Add a media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
   .service__item {
-    max-width: 100%; /* Change maximum width to fit smaller screens */
+    max-width: 100%;
   }
 
   .services__container {
-    flex-direction: row; /* Change flex direction to horizontal for smaller screens */
+    flex-direction: row; 
+  }
+  .custom-button {
+    max-width: none;
   }
 }
-
+}
 /* Add a media query for screens smaller than 480px */
 @media screen and (max-width: 480px) {
   .main__heading h1 {
@@ -215,154 +217,4 @@ html {
   .custom-button {
     max-width: none;
   }
-}
-/* contact */
-
-/* home */
-*{
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-}
-.main{
-  background-color: #252239;
-  color: white;
-  width: 100%;
-  height: 65vh;
-}
-
-.navBar{
-  width: 100%;
-  height: 10vh;
-  background-color: #201d34;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo{
-  width: 70%;
-  height: 73%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo img{
-  width: 76px;
-}
-.logo i{
-  font-size: 22px;
-}
-.slider{
-  width: 100%;
-  height: 85%;
-  background-color: #201d34;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.slider-text{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.stext-inner{
-  width: 85%;
-  height: 70%;
-  background-color: #201d34;
-}
-.text-part{
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-size: 33px;
-  font-family: sans-serif;
-}
-#change-color{
-  color: #a6a5ae;
-}
-.buttons-part{
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 45px;
-  margin-left: 14px;
-}
-.btn-male{
-  width: 31%;
-  height: 43%;
-  background: linear-gradient(to right, #04a2ff, #1f65ff);
-  color: white;
-  border-radius: 39px;
-  box-shadow: 0px 0px 18px 6px #0058ffd1;
-  border: none;
-  font-size: 22px;
-}
-.btn-female{
-  width: 31%;
-  height: 43%;
-  background: linear-gradient(to right, #f1357d, #c44fde);
-  color: white;
-  border-radius: 39px;
-  box-shadow: 0px 0px 20px 3px #e700ffd1;
-  border: none;
-  font-size: 22px;
-}
-.slider-img{
-  width: 50%;
-  height: 100%;
-  background-image: url(./assets/images/food.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.section-two{
-  background-color: #252239;
-  color: white;
-  width: 100%;
-  height: 120vh;
-}
-.sec-two-heading{
-  width: 100%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 31px;
-  font-family: sans-serif;
-}
-.carts{
-  width: 100%;
-  height: 80%;
-  background-color: #252239;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carts-inner{
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.card{
-  width: 72%;
-  height: 18%;
-  background-color: #151226;
-  border-radius: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 30px 0px 30px;
-}
-#numbers{
-  color: linear-gradient(to right, #f1357d, #c44fde);
-  font-size: 22px;
 }
