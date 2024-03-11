@@ -43,20 +43,30 @@ body{
     display: flex;
     align-items: center;
   }
-  .progress-bar{
-    background:#00a5ff;
+  .progress-bar {
+    background: #00a5ff;
     height: 2px;
     display: flex;
     justify-content: center;
     color: #ffffff;
   }
- .progress-bar-text{
-    width: 4%;
-    height: 27px;
-    border-radius: 49% 51% 53% 47% / 0% 0% 100% 100% ;
-    background:#00a5ff;
+  .progress-bar-text {
+    width: 6%;
+    height: 30px;
+    border-radius: 0px 0px 99px 99px;
+    background: #00a5ff;
     text-align: center;
- } 
+  }
+  .progress-percent {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+  }
+  .progress-percent-unit {
+    font-size: 18px;
+    position: absolute;
+    color: white;
+  }
  .text-measurment{
   display: flex;
   flex-direction: column;
@@ -108,7 +118,7 @@ label{
   
 }
 
-.tab button:hover {
+.tab button:focus {
   background: linear-gradient(#00a5ff,#205fff);
   color: #fff;
 }
@@ -181,5 +191,5 @@ margin: 0;
 ::placeholder {
   color: #999; 
   font-style: bold;
-  text-align: end;  
+  text-align: end; 
 }
