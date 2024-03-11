@@ -160,6 +160,7 @@ html {
 .button-text {
   display: inline-block;
   max-width: 95%;
+  color: white;
 }
 
 /* responsive */
@@ -180,24 +181,24 @@ html {
   }
 
   .progress__bar-text {
-    width: 10%; 
-    height: 20px; 
-    padding: 5px; 
-}
-
-/* Add a media query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
-  .service__item {
-    max-width: 100%;
+    width: 10%;
+    height: 20px;
+    padding: 5px;
   }
 
-  .services__container {
-    flex-direction: row; 
+  /* Add a media query for screens smaller than 768px */
+  @media screen and (max-width: 768px) {
+    .service__item {
+      max-width: 100%;
+    }
+
+    .services__container {
+      flex-direction: row;
+    }
+    .custom-button {
+      max-width: none;
+    }
   }
-  .custom-button {
-    max-width: none;
-  }
-}
 }
 /* Add a media query for screens smaller than 480px */
 @media screen and (max-width: 480px) {
